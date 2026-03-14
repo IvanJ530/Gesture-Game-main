@@ -21,7 +21,6 @@ from processor.gesture_classifier import GestureClassifier
 from processor.stability_filter   import StabilityFilter
 from processor.game_engine        import GameEngine
 from ui.renderer import Renderer
-from ui.logger   import Logger
 
 # ── Camera index ──────────────────────────────────────────────────────
 # macOS:  0 = FaceTime HD Camera (built-in), 1 = iPhone Continuity Camera
@@ -61,7 +60,6 @@ def main():
     stability  = StabilityFilter(window_size=10, threshold=0.6)
     engine     = GameEngine()                 # Singleton
     renderer   = Renderer()
-    logger     = Logger(log_dir="logs")
 
     # ── Initial state ──────────────────────────────────────────────────
     phase        = "countdown"
@@ -123,8 +121,6 @@ def main():
                              or "Unknown")
 
                 result = engine.resolve(p1_locked, p2_locked)
-                logger.log(engine.round, p1_locked, p2_locked,
-                           engine.hp[1], engine.hp[2], result)
                 print(f"[Round {engine.round}] {p1_locked} vs {p2_locked} → {result}")
 
                 phase       = "result"

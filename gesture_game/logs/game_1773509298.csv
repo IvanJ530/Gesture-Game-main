@@ -1,5 +1,0 @@
-round,p1_gesture,p2_gesture,p1_hp,p2_hp,result,timestamp
-0,Unknown,Unknown,3,3,Round skipped — gesture not recognised.,1773509303.345
-0,Heal,Unknown,3,3,Round skipped — gesture not recognised.,1773509310.425
-1,Heal,Heal,3,3,Both Heal! Both +1 HP.,1773509317.481
-2,Heal,Heal,3,3,Both Heal! Both +1 HP.,1773509324.574

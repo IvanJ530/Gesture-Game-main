@@ -1,0 +1,5 @@
+round,p1_gesture,p2_gesture,p1_hp,p2_hp,result,timestamp
+1,Attack,Attack,2,2,Both Attack! Both lose 1 HP.,1773510240.259
+2,Attack,Attack,1,1,Both Attack! Both lose 1 HP.,1773510247.333
+3,Defend,Defend,1,1,Both Defend. Stalemate.,1773510254.374
+4,Attack,Attack,0,0,Both Attack! Both lose 1 HP.,1773510261.457
